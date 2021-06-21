@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-back{
+    background: rgba(17, 219, 207,0.8);
+    color: #fff;
+}
+.navbar-brand{
+  color: #000;
+}
+.navbar-brand:hover{
+  color: #fff;
+}
+.nav-link{
+  color: #000;
+}
+.nav-link:hover{
+  color:#fff;
+}
+.navbar-toggler{
+  outline: none!important;
+}
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url("./bg.jpeg") center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  #hero .container {
+    padding-top: 80px;
+  }
+
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .main-btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+   .main-btn:hover {
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color:#fff;
+  }
+
+
+ .service {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(17, 219, 207,0.8);
+    box-shadow: 0px 5px 90px 0px rgba(3, 117, 111, 0.63);
+  }
+
+ .service .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+
+   .service .icon i {
+    font-size: 32px;
+    transition: 0.5s;
+    line-height: 1;
+    position: relative;
+  }
+
+   .service h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+
+   .service h4 a {
+    color: #000;
+    transition: ease-in-out 0.3s;
+  }
+
+   .service p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+    .services i{
+    color: #47aeff;
+  }
+
+  /----about -section/
+  .about-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .about-heading {
+    text-transform: uppercase;
+  }
+
+  .about-heading .about-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .about-heading .about-heading-lower {
+    display: block;
+    font-size: 38px;
+    font-weight: 100;
+  }
+
+  .bg-faded {
+    background-color: rgba(17, 219, 207,0.8);
+  }
+
+  .about-button .btn-color{
+    background: #03a59a;
+    font-weight: bold;
+    color: #fff;
+  }
+  .about {
+    position: relative;
+  }
+
+  @media (min-width: 992px) {
+    .about .about-img {
+      width: 75%;
+      float: right;
+    }
+    .about .about-text {
+      left: 0;
+      width: 60%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+    .about .about-text .about-button {
+      width: 100%;
+      left: 0;
+      position: absolute;
+      bottom: -2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .about .about-text {
+      width: 45%;
+    }
+  }
+
+
+  .camp {
+    background-color: #11dbcf;
+    padding-bottom: 0;
+  }
+
+  .camp h2 {
+    color: #000;
+    margin-bottom: 25px;
+  }
+
+  .camp-grid {
+    margin-top: 65px;
+  }
+
+  .camp-grid .row {
+    margin: 0;
+  }
+
+  .camp-grid .row > div {
+    padding: 0;
+  }
+
+  .camp-grid .row > div .card img {
+    width: 100%;
+  }
+
+  .camp-grid .row > div .card .camp-text {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .camp-grid .row > div .card .camp-text > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .camp-grid .row > div .card .camp-text .card-title {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .camp-grid .row > div .card .camp-text .card-text {
+    color: #fff;
+    opacity: .75;
+    padding: 0 45px;
+  }
+
+  .camp-grid .row > div .card:hover .camp-text {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.team {
+    background: #fff;
+  }
+
+  .team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .team .member .image {
+    overflow: hidden;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+  }
+
+  .team .member .image img {
+    transition: ease-in-out 0.3s;
+  }
+
+  .team .member:hover img {
+    transform: scale(1.1);
+  }
+
+  .team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #36343a;
+  }
+
+  .team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .team .member span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b5b3ba;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+
+  .team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #11dbcf;
+
+  }
+
+  .team .member .social a i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 2px;
+  }
+
+  .team .member .social a:hover {
+    background: #00eeff;
+  }
+
+  .team .member .social a + a {
+    margin-left: 8px;
+  }
+
+.contact-box {
+    color: #000;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+    padding: 20px 0 30px 0;
+    background:#11dbcf;
+  }
+
+  .contact-box i {
+    font-size: 32px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+  }
+
+  .contact-box h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .contact-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .contact button{
+    background: #11dbcf;
+    border: none;
+    padding: 10px;
+  }
+
+ .contact button:hover{
+   background: #00d9ff;
+   color: #fff;
+ }
+</style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav-back fixed-top"
+    id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="Prediction.html">HEALTH PREDICTION</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+           data-toggle="collapse" data-target="#navbarResponsive"
+           aria-controls="navbarResponsive" aria-expanded="false"
+           aria-label="Toggle navigation"><i class="fas fa-syringe fa-2x"></i>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link"
+                  href="#services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                    href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                    href="Medical Camps.html">Medical Camps</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                     href="#team">Team</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                    href="#contact">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<!-- End waala Header -->
+
+   <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1>24/7 Care is available</h1>
+      <h2>Your one step towards your Fitness.</h2>
+      <a href="INDEX.html" class="main-btn">Get Started</a>
+    </div>
+  </section>
+
+   <!-- ======= Services waala Section ======= -->
+   <section id="services" class="services mt-5 mb-3 py-3">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="text-center">Services</h2>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="service shadow">
+            <div class="icon">
+                <i class="fas fa-tooth"></i>
+            </div>
+            <h4><a href="toothcare.html">Tooth Care</a></h4>
+            <p>One place related to teeth related problems.Intensive teeth care along with complimentary prediction provided.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="service c shadow">
+            <div class="icon">
+                <i class="fas fa-lungs"></i>
+            </div>
+            <h4><a href="">Lungs</a></h4>
+            <p>One place to all possible lung disorders.Complimentary prediction for lung related diseases provided.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="service shadow">
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h4><a href="">Heart</a></h4>
+            <p>One place to all heart related disorders.We have experts for all heart disorders that do exist. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="service c shadow">
+            <div class="icon">
+                <i class="fas fa-dna"></i>
+            </div>
+            <h4><a href="">Time Boon</a></h4>
+            <p>Our associated doctors contact you in minimum possible time and you are free to contact us any time you want.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="service shadow">
+            <div class="icon">
+          <i class="fas fa-ambulance"></i>
+            </div>
+            <h4><a href="">Door Step services</a></h4>
+            <p>We do provide door step services which are complimentary in case of emergency situations.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="service shadow">
+            <div class="icon">
+            <i class="fas fa-allergies"></i>
+            </div>
+            <h4><a href="">Guarnteed Expertise</a></h4>
+            <p>We have doctors which do have expertise in their fields and your life is never at risk.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+    <div class="camp-grid">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img src="images/.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                   ..
+                  </h3>
+
+                  <p class="card-text">
+                    ..
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img src="images/.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    ....
+                  </h3>
+
+                  <p class="card-text">
+                    ''''''''
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+           <img  src="images/.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    One Step Solution
+                  </h3>
+
+                  <p class="card-text">
+                   ......
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img  src="images/camp4.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                   XYZ
+                  </h3>
+
+                  <p class="card-text">
+                    XYZ
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+              <img  src="images/.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    XYZ
+                  </h3>
+
+                  <p class="card-text">
+                    XYZ
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img  src="images/.jpg" alt="">
+
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    XYZ
+                  </h3>
+
+                  <p class="card-text">
+                 XYZ
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img  src="images/.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    XYZ
+                  </h3>
+
+                  <p class="card-text">
+                    We predict most accurate
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+          <img  src="images/.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    XYZ
+                  </h3>
+
+                  <p class="card-text">
+                    ....
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ======= Team waala Section ======= -->
+<section id="team" class="team mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p> <i>Team-based health care is the provision of health services to individuals,
+                   families, and/or their communities by at least two health providers who work
+                   collaboratively with patients and their caregivers.</i>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="member">
+                <div class="image"><img src="20200416_160010.jpg"
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Aryan Kumar</h4>
+                  <span> Executive Officer</span>
+
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="member">
+                <div class="image"><img src="images/doc-3.jpg"
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Harshit Singh</h4>
+                  <span>Medicine Department</span>
+
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+              <div class="member">
+                <div class="image"><img src="images/doc-2.jpg"
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Shailendra Ram</h4>
+                  <span>MS</span>
+
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+              <div class="member">
+                <div class="image">
+                  <img src="images/doc-2.jpg"
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sonal Menon</h4>
+                  <span>Accountant</span>
+
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+   <!-- ======= Contact waala Section ======= -->
+   <section id="contact">
+    <div class="container">
+
+      <div class="section-title text-center mt-5">
+                      <h2>Contact</h2>
+        <p>Please do contact us for any queries involved.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact-box">
+                <i class="fas fa-map-signs"></i>
+                <h3>Address</h3>
+                <p>SRM UNIVERSITY,Kattankulathur,Chennai,603203 </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>harshit11@gmail.com<br>sonal22@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+917674776767 <br>+91734298199</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form action="Message.php">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name"
+                placeholder="Your Name">
+
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email"
+                id="email" placeholder="Your Email">
+
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject"
+              id="subject" placeholder="Subject" >
+              </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Queries"></textarea>
+             </div>
+             <div class="text-center">
+               <button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+  <!-- Footer-->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-back btn-social mx-2" href="#!">
+                  <i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-back btn-social mx-2" href="#!">
+                    <i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-back btn-social mx-2" href="#!">
+                      <i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+              <a class="mr-3 text" href="#!">Privacy Policy</a>
+              <a href="#!"class="text">Terms of Use</a></div>
+        </div>
+    </div>
+</footer>
+
+
+  </body>
+</html>
